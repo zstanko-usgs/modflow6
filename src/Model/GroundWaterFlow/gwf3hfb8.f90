@@ -70,7 +70,7 @@ module GwfHfbModule
     ! -- Create the object
     allocate(hfbobj)
     !
-    ! -- create name and memory path
+    ! -- create name and origin
     call hfbobj%set_names(1, name_model, 'HFB', 'HFB')
     !
     ! -- Allocate scalars
@@ -833,7 +833,7 @@ module GwfHfbModule
     integer(I4B) :: ihfb, n, m
     integer(I4B) :: ipos
     real(DP) :: cond, condhfb
-    real(DP) :: fawidth, faheight
+    real(DP) :: fawidth, faheight, faarea
     real(DP) :: topn, topm, botn, botm
 ! ------------------------------------------------------------------------------
     !
@@ -856,9 +856,18 @@ module GwfHfbModule
         else
           faheight = DHALF * ( (topn - botn) + (topm - botm) )
         endif
+		if(this%ihc(this%jas(ipos)) == 0) then
+	      ! SRP - Area of vertical connection
+	      faarea = this%hwva(this%jas(ipos))
+	      !write(this%iout,'(4x,a,1(1pg15.6))') 'faarea_vert (condsat_modify) = ', faarea
+		else	
+		  if(this%hydchr(ihfb) > DZERO) then
+			faarea = this%hwva(this%jas(ipos)) * faheight
+			fawidth = this%hwva(this%jas(ipos))
+          endif
+        endif
         if(this%hydchr(ihfb) > DZERO) then
-          fawidth = this%hwva(this%jas(ipos))
-          condhfb = this%hydchr(ihfb) * fawidth * faheight
+          condhfb = this%hydchr(ihfb) * faarea
           cond = cond * condhfb / (cond + condhfb)
         else
           cond = - cond * this%hydchr(ihfb)
