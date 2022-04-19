@@ -1,0 +1,4 @@
+<map id="gwfgwfconnectionmodule::validateconnection" name="gwfgwfconnectionmodule::validateconnection">
+<area shape="rect" id="node1" title="Validate this connection This is called before proceeding to construct the interface model." alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node2" href="$namespacesimmodule.html#a4c46e49de78d4498dd4ec106357775e6" title="Return number of errors." alt="" coords="244,13,428,39"/>
+</map>

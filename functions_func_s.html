@@ -22,7 +22,6 @@
 /* @license-end */
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="CustomDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,9 +32,9 @@
   <td id="projectlogo"><img alt="Logo" src="mf6-triangular-grid.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MODFLOW 6
-   &#160;<span id="projectnumber">version6.2.2</span>
+   &#160;<span id="projectnumber">version 6.4.0</span>
    </div>
-   <div id="projectbrief">MODFLOW6CodeDocumentation</div>
+   <div id="projectbrief">MODFLOW 6 Code Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -110,6 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions_func_s.html#index_s"><span>s</span></a></li>
       <li><a href="functions_func_t.html#index_t"><span>t</span></a></li>
       <li><a href="functions_func_u.html#index_u"><span>u</span></a></li>
+      <li><a href="functions_func_v.html#index_v"><span>v</span></a></li>
       <li><a href="functions_func_w.html#index_w"><span>w</span></a></li>
       <li><a href="functions_func_x.html#index_x"><span>x</span></a></li>
     </ul>
@@ -155,9 +155,18 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>sav_spdis()
 : <a class="el" href="structgwfnpfmodule_1_1gwfnpftype.html#a03742f40453572cecf0b0c2864849993">gwfnpfmodule::gwfnpftype</a>
 </li>
+<li>save_digraph()
+: <a class="el" href="structdag__module_1_1dag.html#a68a2b076b7f6b05d8185a6531998ca86">dag_module::dag</a>
+</li>
 <li>save_flows()
 : <a class="el" href="structbudgetobjectmodule_1_1budgetobjecttype.html#a9257294cf534f1eb35849c05a311c940">budgetobjectmodule::budgetobjecttype</a>
 , <a class="el" href="structbudgettermmodule_1_1budgettermtype.html#a5f85703374b9597ae66fd39b36949d5a">budgettermmodule::budgettermtype</a>
+</li>
+<li>save_old_ss_sy()
+: <a class="el" href="structgwfstomodule_1_1gwfstotype.html#af1a1b961e43f9a271093cda0b91f26d3">gwfstomodule::gwfstotype</a>
+</li>
+<li>saveexchangeflows()
+: <a class="el" href="structgwfgwfconnectionmodule_1_1gwfgwfconnectiontype.html#a61f4313cfc2d30cde5257500ec7a813d">gwfgwfconnectionmodule::gwfgwfconnectiontype</a>
 </li>
 <li>saveonesimval()
 : <a class="el" href="structobsmodule_1_1obstype.html#af6ff948e406d0cdfffccb2c11f49d8ec">obsmodule::obstype</a>
@@ -177,14 +186,33 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>set_auxname()
 : <a class="el" href="structpackagebudgetmodule_1_1packagebudgettype.html#a28e43ab14abe8f3282844f008b335e27">packagebudgetmodule::packagebudgettype</a>
 </li>
+<li>set_changed_at()
+: <a class="el" href="interfacetvbasemodule_1_1set__changed__at.html#a451eb1e3a75100a1d0c5013731da7117">tvbasemodule::set_changed_at</a>
+, <a class="el" href="structtvbasemodule_1_1tvbasetype.html#a2595613f242e213b030d471c94984000">tvbasemodule::tvbasetype</a>
+, <a class="el" href="structtvkmodule_1_1tvktype.html#a7f9c676de8571a6d2c6e8d048fd15adf">tvkmodule::tvktype</a>
+, <a class="el" href="structtvsmodule_1_1tvstype.html#a2260122132efc611045516f776ba02e2">tvsmodule::tvstype</a>
+</li>
 <li>set_cl1_cl2_from_fleng()
 : <a class="el" href="structconnectionsmodule_1_1connectionstype.html#ae902cc5af376eae3c3240909ff06649b">connectionsmodule::connectionstype</a>
 </li>
 <li>set_concentration_pointer()
 : <a class="el" href="structgwfbuymodule_1_1gwfbuytype.html#aff62e131c78c0cbfdd563d74c455ed0d">gwfbuymodule::gwfbuytype</a>
 </li>
+<li>set_data()
+: <a class="el" href="structgwtdspmodule_1_1gwtdsptype.html#a2c25bf30666e0124bb14b4630519a1be">gwtdspmodule::gwtdsptype</a>
+</li>
 <li>set_edge_properties()
 : <a class="el" href="structgwfnpfmodule_1_1gwfnpftype.html#a3a642d2825cf90d88c5477e81d359a69">gwfnpfmodule::gwfnpftype</a>
+</li>
+<li>set_edge_vector()
+: <a class="el" href="structdag__module_1_1vertex.html#a99437a7be3d8c8dfcff0ecddc5e34d28">dag_module::vertex</a>
+</li>
+<li>set_edges()
+: <a class="el" href="structdag__module_1_1dag.html#a1e03142a269352a7269d3e9f7f501e41">dag_module::dag</a>
+, <a class="el" href="structdag__module_1_1vertex.html#a0b8cadcfd89747c0e412b516c1b477fb">dag_module::vertex</a>
+</li>
+<li>set_fmi_pr_rc()
+: <a class="el" href="structgwtmvtmodule_1_1gwtmvttype.html#aa8cabd0ca41c5aea1adaac42a74d3ae9">gwtmvtmodule::gwtmvttype</a>
 </li>
 <li>set_grid_data()
 : <a class="el" href="structgwfnpfmodule_1_1gwfnpftype.html#a067e854283fe52835c765290f7f36ba3">gwfnpfmodule::gwfnpftype</a>
@@ -196,8 +224,14 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="structtablemodule_1_1tabletype.html#abaa74724c7765f437ec9cc624d33ec9d">tablemodule::tabletype</a>
 , <a class="el" href="structtabletermmodule_1_1tabletermtype.html#adf9fd12f4e8f28f20feedebf3609a11f">tabletermmodule::tabletermtype</a>
 </li>
+<li>set_iauxpak()
+: <a class="el" href="structgwtssmmodule_1_1gwtssmtype.html#afb051aee3b32b49041ef52688b5aefa0">gwtssmmodule::gwtssmtype</a>
+</li>
 <li>set_iboundptr()
 : <a class="el" href="structnumericalmodelmodule_1_1numericalmodeltype.html#a991e3487bc8c7670aae1c545d833d274">numericalmodelmodule::numericalmodeltype</a>
+</li>
+<li>set_ibudcsv()
+: <a class="el" href="structbudgetmodule_1_1budgettype.html#aea75095dff9417b289409f4532a1bb5b">budgetmodule::budgettype</a>
 </li>
 <li>set_idsoln()
 : <a class="el" href="structnumericalmodelmodule_1_1numericalmodeltype.html#a4212d89c4dcd60e1ca81cfe2b402e368">numericalmodelmodule::numericalmodeltype</a>
@@ -246,10 +280,17 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="structlistreadermodule_1_1listreadertype.html#a93f37b6328328db8b1529e486253eb38">listreadermodule::listreadertype</a>
 </li>
 <li>set_option()
-: <a class="el" href="structoutputcontroldata_1_1outputcontroldatatype.html#a8122bfe24827ad6937a3de6a2d940619">outputcontroldata::outputcontroldatatype</a>
+: <a class="el" href="structoutputcontroldatamodule_1_1outputcontroldatatype.html#a6f68e42556518d8a7f4ca7f7ce069085">outputcontroldatamodule::outputcontroldatatype</a>
 </li>
 <li>set_options()
-: <a class="el" href="structgwfnpfmodule_1_1gwfnpftype.html#ada3acce4c6657fcfd89c33681e4e7d70">gwfnpfmodule::gwfnpftype</a>
+: <a class="el" href="structgwfbuymodule_1_1gwfbuytype.html#a6b9d9cec26ee37ab46a64baadd9265b9">gwfbuymodule::gwfbuytype</a>
+, <a class="el" href="structgwfnpfmodule_1_1gwfnpftype.html#ada3acce4c6657fcfd89c33681e4e7d70">gwfnpfmodule::gwfnpftype</a>
+</li>
+<li>set_packagedata()
+: <a class="el" href="structgwfbuymodule_1_1gwfbuytype.html#acb55097cd5ddafdb4d54f76cad897118">gwfbuymodule::gwfbuytype</a>
+</li>
+<li>set_pointer_mvrbudobj()
+: <a class="el" href="structgwtmvtmodule_1_1gwtmvttype.html#a0bf4a9de1a1d797f687c5c26ad161e92">gwtmvtmodule::gwtmvttype</a>
 </li>
 <li>set_pointers()
 : <a class="el" href="structbndmodule_1_1bndtype.html#a66637fdc9875a6ff7dbefaf961eda171">bndmodule::bndtype</a>
@@ -259,7 +300,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 , <a class="el" href="structlakmodule_1_1laktype.html#aa2ca74228ddbe18f4c01198aae46e0b4">lakmodule::laktype</a>
 , <a class="el" href="structmawmodule_1_1mawtype.html#aee4bc5c18efbda00086782a2bdece9aa">mawmodule::mawtype</a>
 , <a class="el" href="structpackagebudgetmodule_1_1packagebudgettype.html#a695e674839f9088326ac7abc1c3c51a5">packagebudgetmodule::packagebudgettype</a>
-, <a class="el" href="structsfrmodule_1_1sfrtype.html#ae9ee8f30786c1567128e938bd4ed3db0">sfrmodule::sfrtype</a>
 </li>
 <li>set_print_flag()
 : <a class="el" href="structoutputcontrolmodule_1_1outputcontroltype.html#ad0e195b9b690cfaf287d76f7c123d377">outputcontrolmodule::outputcontroltype</a>
@@ -267,8 +307,14 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>set_rhsptr()
 : <a class="el" href="structnumericalmodelmodule_1_1numericalmodeltype.html#a6bd4781776f3bbe70a5f8f7cd713fc6c">numericalmodelmodule::numericalmodeltype</a>
 </li>
+<li>set_ssmivec()
+: <a class="el" href="structgwtssmmodule_1_1gwtssmtype.html#ac85a183126fcd58998632d30d57c4d55">gwtssmmodule::gwtssmtype</a>
+</li>
 <li>set_title()
 : <a class="el" href="structtablemodule_1_1tabletype.html#a25bc89b438d08bace911ff0b740ecf5a">tablemodule::tabletype</a>
+</li>
+<li>set_value()
+: <a class="el" href="structgwtspcmodule_1_1gwtspctype.html#aad891d0418efdb8b1ca2c5105ef88022">gwtspcmodule::gwtspctype</a>
 </li>
 <li>set_value_at_indices_double()
 : <a class="el" href="structbmif_1_1bmi.html#ae89816d5a63188374a8564037c36541a">bmif::bmi</a>
@@ -288,11 +334,23 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>set_value_int()
 : <a class="el" href="structbmif_1_1bmi.html#a5d3e0245db39a489dab36c03a7956a6a">bmif::bmi</a>
 </li>
+<li>set_vertex_info()
+: <a class="el" href="structdag__module_1_1dag.html#ad776a927632985295ce4cea318279075">dag_module::dag</a>
+</li>
+<li>set_vertices()
+: <a class="el" href="structdag__module_1_1dag.html#a6a1cb648c3157d7e8f5350f1ce1c9cd0">dag_module::dag</a>
+</li>
 <li>set_xptr()
 : <a class="el" href="structnumericalmodelmodule_1_1numericalmodeltype.html#abc8747132884b7b76b536759be7a1305">numericalmodelmodule::numericalmodeltype</a>
 </li>
 <li>setbelowpet()
 : <a class="el" href="structuzfcellgroupmodule_1_1uzfcellgrouptype.html#add9537496c5074753aada712144ed9f2">uzfcellgroupmodule::uzfcellgrouptype</a>
+</li>
+<li>setbuydata()
+: <a class="el" href="structgwfinterfacemodelmodule_1_1gwfinterfacemodeltype.html#affefd60567bb9cd203c3e1a821c7df3b">gwfinterfacemodelmodule::gwfinterfacemodeltype</a>
+</li>
+<li>setconnectionstosolution()
+: <a class="el" href="structconnectionbuildermodule_1_1connectionbuildertype.html#a076924007e55ba62d43735d56a9bc46a">connectionbuildermodule::connectionbuildertype</a>
 </li>
 <li>setdata()
 : <a class="el" href="structuzfcellgroupmodule_1_1uzfcellgrouptype.html#a5fdb1d22b2be187fd0f41cf377c19432">uzfcellgroupmodule::uzfcellgrouptype</a>
@@ -312,11 +370,37 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>setdatauzfarea()
 : <a class="el" href="structuzfcellgroupmodule_1_1uzfcellgrouptype.html#a02eba084f5a9dcf21c027e747322e0b3">uzfcellgroupmodule::uzfcellgrouptype</a>
 </li>
+<li>setdspgriddata()
+: <a class="el" href="structgwtinterfacemodelmodule_1_1gwtinterfacemodeltype.html#a85005cadd686f04c9be7e7fc5caad57e">gwtinterfacemodelmodule::gwtinterfacemodeltype</a>
+</li>
+<li>setexchangeconnections()
+: <a class="el" href="structspatialmodelconnectionmodule_1_1spatialmodelconnectiontype.html#ab9a950e04abc8bc0a4de896a401a2810">spatialmodelconnectionmodule::spatialmodelconnectiontype</a>
+</li>
+<li>setflowtoexchange()
+: <a class="el" href="structgwfgwfconnectionmodule_1_1gwfgwfconnectiontype.html#a70ad9327d5ac36766e967cb00fe8b109">gwfgwfconnectionmodule::gwfgwfconnectiontype</a>
+, <a class="el" href="structgwtgwtconnectionmodule_1_1gwtgwtconnectiontype.html#aec3f047b13f2e9100a87435def6776d8">gwtgwtconnectionmodule::gwtgwtconnectiontype</a>
+</li>
+<li>setgridextent()
+: <a class="el" href="structgwfgwfconnectionmodule_1_1gwfgwfconnectiontype.html#a23ea0c0a886b3dbc40d57374ba98f49d">gwfgwfconnectionmodule::gwfgwfconnectiontype</a>
+, <a class="el" href="structgwtgwtconnectionmodule_1_1gwtgwtconnectiontype.html#a97727c455881670ac925d7da2538c1f8">gwtgwtconnectionmodule::gwtgwtconnectiontype</a>
+</li>
 <li>setgwpet()
 : <a class="el" href="structuzfcellgroupmodule_1_1uzfcellgrouptype.html#a030ce2d2a44ebbc8d9ce47233057fafd">uzfcellgroupmodule::uzfcellgrouptype</a>
 </li>
 <li>sethead()
 : <a class="el" href="structuzfcellgroupmodule_1_1uzfcellgrouptype.html#a09258a611b1f70d607f686c9db84f6f1">uzfcellgroupmodule::uzfcellgrouptype</a>
+</li>
+<li>setmaskonconnection()
+: <a class="el" href="structgridconnectionmodule_1_1gridconnectiontype.html#a1b2ad7be7eed2e58c179020907359f63">gridconnectionmodule::gridconnectiontype</a>
+</li>
+<li>setnpfedgeprops()
+: <a class="el" href="structgwfgwfconnectionmodule_1_1gwfgwfconnectiontype.html#add3f16f7bc63449b28b7f263922e4483">gwfgwfconnectionmodule::gwfgwfconnectiontype</a>
+</li>
+<li>setnpfgriddata()
+: <a class="el" href="structgwfinterfacemodelmodule_1_1gwfinterfacemodeltype.html#a4e80f803bfcfcc7b3afaea5ce63a1fb8">gwfinterfacemodelmodule::gwfinterfacemodeltype</a>
+</li>
+<li>setnpfoptions()
+: <a class="el" href="structgwfinterfacemodelmodule_1_1gwfinterfacemodeltype.html#a2cc234ebebc665fdeff00dc7da6fe245">gwfinterfacemodelmodule::gwfinterfacemodeltype</a>
 </li>
 <li>setptr_dbl()
 : <a class="el" href="interfacememorymanagermodule_1_1mem__setptr.html#ae4b872e7963cf5c16e7b03e7c99a6f0c">memorymanagermodule::mem_setptr</a>
@@ -344,6 +428,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>setptr_logical()
 : <a class="el" href="interfacememorymanagermodule_1_1mem__setptr.html#aa869cd46f880d5eefa8b8d1d296d77f6">memorymanagermodule::mem_setptr</a>
+</li>
+<li>setupgridconnection()
+: <a class="el" href="structspatialmodelconnectionmodule_1_1spatialmodelconnectiontype.html#a5f84d8eda827147bac3ffb6d45d1083e">spatialmodelconnectionmodule::spatialmodelconnectiontype</a>
 </li>
 <li>setwaves()
 : <a class="el" href="structuzfcellgroupmodule_1_1uzfcellgrouptype.html#aa3629b24686d65e735200fe09860d983">uzfcellgroupmodule::uzfcellgrouptype</a>
@@ -375,6 +462,12 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>sfr_calc_qsource()
 : <a class="el" href="structsfrmodule_1_1sfrtype.html#a1745f124e854ce3f5aaea711028cb271">sfrmodule::sfrtype</a>
 </li>
+<li>sfr_calc_reach_depth()
+: <a class="el" href="structsfrmodule_1_1sfrtype.html#acf07707c954afde9ff7543624392d1e2">sfrmodule::sfrtype</a>
+</li>
+<li>sfr_calc_xs_depth()
+: <a class="el" href="structsfrmodule_1_1sfrtype.html#a19fe87c481e0c8b842b157511023afd8">sfrmodule::sfrtype</a>
+</li>
 <li>sfr_calculate_density_exchange()
 : <a class="el" href="structsfrmodule_1_1sfrtype.html#a551f784a9af968d5fee472f6bcd19a78">sfrmodule::sfrtype</a>
 </li>
@@ -396,14 +489,14 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>sfr_read_connectiondata()
 : <a class="el" href="structsfrmodule_1_1sfrtype.html#ac33540a74e38acc0a698e26104e1d3c7">sfrmodule::sfrtype</a>
 </li>
+<li>sfr_read_crossection()
+: <a class="el" href="structsfrmodule_1_1sfrtype.html#a354c0c6721a998b295261cd3c1b148b4">sfrmodule::sfrtype</a>
+</li>
 <li>sfr_read_diversions()
 : <a class="el" href="structsfrmodule_1_1sfrtype.html#a5c0845c52bd74afe2ed51bbf431f57a9">sfrmodule::sfrtype</a>
 </li>
 <li>sfr_read_packagedata()
 : <a class="el" href="structsfrmodule_1_1sfrtype.html#a558f32ee5614c80308b1da555773bd62">sfrmodule::sfrtype</a>
-</li>
-<li>sfr_rectch_depth()
-: <a class="el" href="structsfrmodule_1_1sfrtype.html#a0731dda5fd98a4e6665e6bdf8d530171">sfrmodule::sfrtype</a>
 </li>
 <li>sfr_set_stressperiod()
 : <a class="el" href="structsfrmodule_1_1sfrtype.html#a8b182456b625014be19764a12d5490a3">sfrmodule::sfrtype</a>
@@ -444,6 +537,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>shares_edge()
 : <a class="el" href="structdisvgeom_1_1disvgeomtype.html#ac3f7ebaae3e19daa2305869d5b9028ac">disvgeom::disvgeomtype</a>
 </li>
+<li>shrink_to_fit()
+: <a class="el" href="structvectorintmodule_1_1vectorint.html#a3013cc8580ffd816850b8dc60d188b35">vectorintmodule::vectorint</a>
+</li>
 <li>simgwet()
 : <a class="el" href="structuzfcellgroupmodule_1_1uzfcellgrouptype.html#a3f0baf9728354e090cc2538abd0e2b24">uzfcellgroupmodule::uzfcellgrouptype</a>
 </li>
@@ -462,6 +558,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>sln_backtracking_xupdate()
 : <a class="el" href="structnumericalsolutionmodule_1_1numericalsolutiontype.html#a896c5ea41117a2eb5b8516edaaa3f88d">numericalsolutionmodule::numericalsolutiontype</a>
+</li>
+<li>sln_buildsystem()
+: <a class="el" href="structnumericalsolutionmodule_1_1numericalsolutiontype.html#a37d24d62d70fe44c55f6db18246840b0">numericalsolutionmodule::numericalsolutiontype</a>
 </li>
 <li>sln_ca()
 : <a class="el" href="structbasesolutionmodule_1_1basesolutiontype.html#a18fa6139b6580f73eea34eee70ecb63b">basesolutionmodule::basesolutiontype</a>
@@ -535,6 +634,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>slnaddmodel()
 : <a class="el" href="interfacebasesolutionmodule_1_1slnaddmodel.html#a280251b92c378116291c2087156fda73">basesolutionmodule::slnaddmodel</a>
 </li>
+<li>slngetexchanges()
+: <a class="el" href="interfacebasesolutionmodule_1_1slngetexchanges.html#ab0d177600e970d6acf0464b377db12f9">basesolutionmodule::slngetexchanges</a>
+</li>
 <li>slngetmodels()
 : <a class="el" href="interfacebasesolutionmodule_1_1slngetmodels.html#a583e9205e5e4abdf460fca02c5c3a023">basesolutionmodule::slngetmodels</a>
 </li>
@@ -547,6 +649,45 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>sort()
 : <a class="el" href="structsparsemodule_1_1sparsematrix.html#af766aaef5d1bdaddcd0621608b0113c5">sparsemodule::sparsematrix</a>
+</li>
+<li>sortinterfacegrid()
+: <a class="el" href="structgridconnectionmodule_1_1gridconnectiontype.html#a5271c85cce6383603058c642cf2f553e">gridconnectionmodule::gridconnectiontype</a>
+</li>
+<li>spatialcon_ac()
+: <a class="el" href="structspatialmodelconnectionmodule_1_1spatialmodelconnectiontype.html#a3a5b4f0d8169f6dfd25c70779b8f23a4">spatialmodelconnectionmodule::spatialmodelconnectiontype</a>
+</li>
+<li>spatialcon_ar()
+: <a class="el" href="structspatialmodelconnectionmodule_1_1spatialmodelconnectiontype.html#af87b50c2356cc2f4acb6f57a8a1938b8">spatialmodelconnectionmodule::spatialmodelconnectiontype</a>
+</li>
+<li>spatialcon_connect()
+: <a class="el" href="structspatialmodelconnectionmodule_1_1spatialmodelconnectiontype.html#abb1eaf7e23ed25058f228558910c8b53">spatialmodelconnectionmodule::spatialmodelconnectiontype</a>
+</li>
+<li>spatialcon_da()
+: <a class="el" href="structspatialmodelconnectionmodule_1_1spatialmodelconnectiontype.html#ab0596f0f8a7ff10b57a4965561c47450">spatialmodelconnectionmodule::spatialmodelconnectiontype</a>
+</li>
+<li>spatialcon_df()
+: <a class="el" href="structspatialmodelconnectionmodule_1_1spatialmodelconnectiontype.html#a7e866aaef09216aa3f86c6970d2d8722">spatialmodelconnectionmodule::spatialmodelconnectiontype</a>
+</li>
+<li>spatialcon_setmodelptrs()
+: <a class="el" href="structspatialmodelconnectionmodule_1_1spatialmodelconnectiontype.html#a097025725b6075140e50edee9dd99c1c">spatialmodelconnectionmodule::spatialmodelconnectiontype</a>
+</li>
+<li>spatialconnection_ctor()
+: <a class="el" href="structspatialmodelconnectionmodule_1_1spatialmodelconnectiontype.html#a9dec5af7c48aad114acda6a0daffbc7e">spatialmodelconnectionmodule::spatialmodelconnectiontype</a>
+</li>
+<li>spc_ad()
+: <a class="el" href="structgwtspcmodule_1_1gwtspctype.html#a21ab000c17057628217064f3bf98c6ce">gwtspcmodule::gwtspctype</a>
+</li>
+<li>spc_da()
+: <a class="el" href="structgwtspcmodule_1_1gwtspctype.html#ae1c9227fa8900248e106e9d86b6be9c0">gwtspcmodule::gwtspctype</a>
+</li>
+<li>spc_rp()
+: <a class="el" href="structgwtspcmodule_1_1gwtspctype.html#a378a92016ba80220a029eba2682788b9">gwtspcmodule::gwtspctype</a>
+</li>
+<li>spc_rp_array()
+: <a class="el" href="structgwtspcmodule_1_1gwtspctype.html#a8cc5002cab93c03bef92b9ea13c5a246">gwtspcmodule::gwtspctype</a>
+</li>
+<li>spc_rp_list()
+: <a class="el" href="structgwtspcmodule_1_1gwtspctype.html#ae126c412243d5e0bf713cff350991b5b">gwtspcmodule::gwtspctype</a>
 </li>
 <li>ssm_ad()
 : <a class="el" href="structgwtssmmodule_1_1gwtssmtype.html#ab7c2483a1655a6b656bf64c476bce8e7">gwtssmmodule::gwtssmtype</a>
@@ -571,6 +712,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>ssm_ot_flow()
 : <a class="el" href="structgwtssmmodule_1_1gwtssmtype.html#ae51638f3d7ab87e55d47c03d6fed192c">gwtssmmodule::gwtssmtype</a>
+</li>
+<li>ssm_rp()
+: <a class="el" href="structgwtssmmodule_1_1gwtssmtype.html#a5f50e7a97e6d12fdec0db3d02589685b">gwtssmmodule::gwtssmtype</a>
 </li>
 <li>ssm_term()
 : <a class="el" href="structgwtssmmodule_1_1gwtssmtype.html#a7c765a8ce19f96d4a202c6b73ea265f5">gwtssmmodule::gwtssmtype</a>
@@ -617,11 +761,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 , <a class="el" href="structgwfdisumodule_1_1gwfdisutype.html#a0df6dc3122631a93a7cbb282fab75330">gwfdisumodule::gwfdisutype</a>
 , <a class="el" href="structgwfdisvmodule_1_1gwfdisvtype.html#aa64dfd955c1a2e06f369bf547c717991">gwfdisvmodule::gwfdisvtype</a>
 </li>
-<li>surface_area()
-: <a class="el" href="structsfrmodule_1_1sfrtype.html#afb1303a6e6ac3506f7c1b3187fbd9a08">sfrmodule::sfrtype</a>
-</li>
-<li>surface_area_wet()
-: <a class="el" href="structsfrmodule_1_1sfrtype.html#acf9fb3febe437bc0a3df195d07b1d246">sfrmodule::sfrtype</a>
+<li>syncinterfacemodel()
+: <a class="el" href="structgwfgwfconnectionmodule_1_1gwfgwfconnectiontype.html#aad7f46377c47255769873a238866d62d">gwfgwfconnectionmodule::gwfgwfconnectiontype</a>
+, <a class="el" href="structgwtgwtconnectionmodule_1_1gwtgwtconnectiontype.html#aa52d5993cf28d7ec1e30684aadf1d134">gwtgwtconnectionmodule::gwtgwtconnectiontype</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -629,7 +771,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 15 2021 20:54:19 for MODFLOW 6 by
+    <li class="footer">Generated on Tue Apr 19 2022 21:32:30 for MODFLOW 6 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
