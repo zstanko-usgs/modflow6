@@ -624,7 +624,7 @@ contains
     use ListsModule, only: solutiongrouplist
     use SimVariablesModule, only: iFailedStepRetry
     use SolutionGroupModule, only: SolutionGroupType, GetSolutionGroupFromList
-    use IdmLoadModule, only: idm_ad
+    ! use IdmLoadModule, only: idm_ad
     ! -- local variables
     class(SolutionGroupType), pointer :: sgp => null()
     integer(I4B) :: isg
@@ -642,7 +642,7 @@ contains
     retryloop: do
 
       ! -- idm advance
-      call idm_ad()
+      ! call idm_ad()
 
       do isg = 1, solutiongrouplist%Count()
         sgp => GetSolutionGroupFromList(solutiongrouplist, isg)
