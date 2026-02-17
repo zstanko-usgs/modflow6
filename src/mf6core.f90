@@ -644,7 +644,7 @@ contains
     iFailedStepRetry = 0
     retryloop: do
 
-      if (iFailedStepRetry > 0) then     
+      if (iFailedStepRetry > 0) then
         ! advance IDM
         call idm_ad()
       end if
