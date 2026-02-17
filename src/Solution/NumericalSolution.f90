@@ -1466,8 +1466,6 @@ contains
   !!
   !<
   subroutine prepareSolve(this)
-    ! -- modules
-    use IdmLoadModule, only: idm_ad
     ! -- dummy variables
     class(NumericalSolutionType) :: this !< NumericalSolutionType instance
     ! -- local variables
@@ -1478,9 +1476,6 @@ contains
 
     ! start timer
     call g_prof%start("Prepare solve"//this%id_postfix, this%tmr_prep_solve)
-
-    ! advance IDM
-    call idm_ad()
 
     ! synchronize for AD
     call this%synchronize(STG_BFR_EXG_AD, this%synchronize_ctx)
