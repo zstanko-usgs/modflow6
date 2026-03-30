@@ -273,7 +273,8 @@ contains
 
       ! scale maxbound by keystring member count; fall back to nodes * nmembers
       ! when no DIMENSIONS block is present (e.g. TVK/TVS)
-      if (this%loadtype == KEYSTRING .or. this%loadtype == ADVANCED) then
+      if (this%loadtype == KEYSTRING .or. &
+          this%loadtype == ADVANCED) then
         ! count members from the KEYSTRING aggregate type definition, which
         ! names exactly the dispatchable members
         nmembers = 0
@@ -288,11 +289,7 @@ contains
         end if
         if (allocated(cols)) deallocate (cols)
         if (allocated(ks_cols)) deallocate (ks_cols)
-        if (nmembers > 0 .and. this%maxbound > 0) then
-          this%maxbound = this%maxbound * nmembers
-        else if (nmembers > 0 .and. this%nodes > 0) then
-          this%maxbound = this%nodes * nmembers
-        end if
+        if (this%maxbound == 0) this%maxbound = this%nodes * nmembers
       end if
     end if
   end subroutine allocate_scalars
@@ -526,6 +523,8 @@ contains
         in_scope = .true.
       case ('SSM')
         if (tagname == 'MIXED') in_scope = .true.
+      case ('SPC', 'SPCA')
+        in_scope = .true.
       case default
         errmsg = 'LoadContext in_scope needs new check for: '// &
                  trim(mf6_input%subcomponent_type)//'/'//trim(idt%tagname)
